@@ -426,3 +426,106 @@ body {
 .footer-links a:hover {
     color: var(--text-main);
 }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .nav-tagline {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        padding: 16px 0;
+    }
+
+    .hero {
+        padding: 60px 0 40px;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .url-form {
+        flex-direction: column;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .input-wrapper {
+        background: white;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        padding: 4px 16px;
+        margin-bottom: 12px;
+    }
+
+    .btn-accent {
+        width: 100%;
+        justify-content: center;
+        border-radius: 12px;
+    }
+
+    .roast-card {
+        padding: 24px;
+    }
+
+    .roast-blockquote {
+        font-size: 1.1rem;
+    }
+
+    .tips-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .tip-card {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .cta-card {
+        padding: 30px 20px;
+    }
+
+    .cta-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .footer-left {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+    }
+}
