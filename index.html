@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageAnalyzer | AI-Powered Landing Page Analysis</title>
+    <meta name="description" content="Get 10 expert optimization tips and a brutal roast of your landing page instantly.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i data-lucide="flame" class="logo-icon"></i>
+                <span class="logo-text">PageAnalyzer</span>
+            </div>
+            <nav class="nav-links">
+                <span class="nav-tagline">AI-powered CRO analysis in seconds</span>
+                <a href="#" class="nav-link">Pricing</a>
+                <button class="btn btn-primary btn-sm">Sign In</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Analyze My Landing Page</h1>
+                <p class="hero-subtitle">Paste your URL and get 10 expert optimization tips Instantly</p>
+                
+                <form id="analyze-form" class="url-form">
+                    <div class="input-wrapper">
+                        <i data-lucide="link" class="input-icon"></i>
+                        <input type="url" id="page-url" placeholder="https://yoursite.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-accent" id="analyze-btn">
+                        <span>Analyze</span>
+                        <i data-lucide="sparkles"></i>
+                    </button>
+                </form>
+                <p class="form-disclaimer">No credit card required. One roast per day.</p>
+            </div>
+        </section>
+
+        <div id="results-container" class="results-container container hidden">
+            <section class="tips-section">
+                <div class="tips-header">
+                    <div class="tips-title-group">
+                        <i data-lucide="check-square" class="tips-main-icon"></i>
+                        <h2 class="tips-title">10 Conversion Optimization Tips</h2>
+                    </div>
+                </div>
+
+                <div id="tips-list" class="tips-list">
+                    <!-- Tips will be injected here -->
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="cta-card">
+                    <h3>Want the full 50-point checklist?</h3>
+                    <p>Our Pro analysis dives deeper into accessibility, SEO, and copywriting.</p>
+                    <button class="btn btn-white">
+                        <span>Upgrade to Pro</span>
+                        <i data-lucide="star"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <div id="loading-state" class="loading-state hidden">
+            <div class="spinner"></div>
+            <p>Analyzing your landing page...</p>
+            <p class="loading-subtext">Our AI expert is roasting your design. Hold tight!</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <div class="logo logo-sm">
+                    <i data-lucide="flame" class="logo-icon"></i>
+                    <span class="logo-text">PageRoaster</span>
+                </div>
+                <p class="copyright">© 2024 Page Roaster. No landing pages were harmed in the making of this tool.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Twitter</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
